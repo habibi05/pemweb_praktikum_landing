@@ -4,32 +4,26 @@
 	<title>Landing Page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<!-- Start Header -->
 	<header>
-		<nav>
-			<ul>
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Services</a>
-				</li>
-				<li>
-					<a href="#">Pricing</a>
-				</li>
-				<li>
-					<a href="#">Testimonials</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="header">
+			<a class="header-logo" href="#home">Logo</a>
+			<nav>
+				<a class="nav-item" href="#home">Home</a>
+				<a class="nav-item" href="#services">Services</a>
+				<a class="nav-item" href="#price">Pricing</a>
+				<a class="nav-item" href="#testimonials">Testimonials</a>
+			</nav>
+		</div>
 	</header>
 	<!-- End Header -->
 
 	<section>
 		<!-- Start Head section -->
-		<article>
+		<article id="home" class="section-head">
 			<p>Wujudkan Ide Anda</p>
 			<h1>LEWAT TEKNOLOGI</h1>
 			<p>Yang Memudahkan</p>
@@ -37,102 +31,129 @@
 		<!-- End Head section -->
 
 		<!-- Start Services Section -->
-		<article>
-			<div>
+		<article id="services" class="section-services">
+			<div class="section-title text-center">
 				<h2>Services</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 			</div>
 
-			<div>
-				<div>
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			<div class="section-grid">
+				<div class="section-grid-item text-center">
+					<div class="services-item">
+						<h3>Single Shared Hosting</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+					</div>
 				</div>
-
-				<div>
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+				
+				<div class="section-grid-item text-center">
+					<div class="services-item">
+						<h3>Premium Shared Hosting</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+					</div>
 				</div>
-
-				<div>
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+				
+				<div class="section-grid-item text-center">
+					<div class="services-item">
+						<h3>Business Shared Hosting</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+					</div>
 				</div>
 			</div>
 		</article>
 		<!-- End Service Section -->
 
 		<!-- Start Pricing -->
-		<article>
-			<div>
+		<article id="price" class="section-pricing">
+			<div class="section-title text-center">
 				<h2>Pricing</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 			</div>
 
-			<div>
-				<div>
-					<h3>Small</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-					<strong>Rp. 500.000</strong>
-					<ul>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-					</ul>
+			<div class="section-grid">
+				<div class="section-grid-item text-center">
+					<div class="services-item">
+						<h3>Small</h3>
+						<strong>Rp. 500.000 <small>/ Bulan</small></strong>
+						<p>Lorem ipsum dolor sit amet</p>
+						<ul>
+							<li>1 Website</li>
+							<li>10 GB SSD Storage</li>
+							<li>1 Email Account</li>
+							<li>Free Domain</li>
+							<li>100 GB Bandwidth</li>
+						</ul>
+					</div>
 				</div>
 
-				<div>
-					<h3>Medium</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-					<strong>Rp. 750.000</strong>
-					<ul>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-					</ul>
+				<div class="section-grid-item text-center">
+					<div class="services-item">
+						<h3>Medium</h3>
+						<strong>Rp. 750.000 <small>/ Bulan</small></strong>
+						<p>Lorem ipsum dolor sit amet</p>
+						<ul>
+							<li>100 Website</li>
+							<li>20 GB SSD Storage</li>
+							<li>Free Email</li>
+							<li>Free Domain</li>
+							<li>Unlimited Bandwidth</li>
+						</ul>
+					</div>
 				</div>
 
-				<div>
-					<h3>Big</h3>
-					<p>Lorem ipsum dolor sit amet</p>
-					<strong>Rp. 1000.000</strong>
-					<ul>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-					</ul>
+				<div class="section-grid-item text-center">
+					<div class="services-item">
+						<h3>Big</h3>
+						<strong>Rp. 1000.000 <small>/ Bulan</small></strong>
+						<p>Lorem ipsum dolor sit amet</p>
+						<ul>
+							<li>100 Website</li>
+							<li>100 GB SSD Storage</li>
+							<li>Free Email</li>
+							<li>Free Domain</li>
+							<li>Unlimited Bandwidth</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</article>
 		<!-- End Pricing -->
 
 		<!-- Start Testimonials Section -->
-		<article>
-			<div>
+		<article id="testimonials" class="section-testimonials">
+			<div class="section-title text-center">
 				<h2>Testimonials</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 			</div>
 
 			<div>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-					<h3>Lorem ipsum dolor sit amet</h3>
+				<div class="testimonials-item">
+					<div class="testimonials-image">
+						<img src="images/avatar.png" class="img-fluid" alt="avatar">
+					</div>
+					<div class="testimonials-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						<h3>Jhon Doe</h3>
+					</div>
 				</div>
 
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-					<h3>Lorem ipsum dolor sit amet</h3>
+				<div class="testimonials-item">
+					<div class="testimonials-image">
+						<img src="images/avatar.png" class="img-fluid" alt="avatar">
+					</div>
+					<div class="testimonials-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						<h3>Kelvin Wood</h3>
+					</div>
 				</div>
 				
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-					<h3>Lorem ipsum dolor sit amet</h3>
+				<div class="testimonials-item">
+					<div class="testimonials-image">
+						<img src="images/avatar.png" class="img-fluid" alt="avatar">
+					</div>
+					<div class="testimonials-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						<h3>David Martin</h3>
+					</div>
 				</div>
 			</div>
 		</article>
